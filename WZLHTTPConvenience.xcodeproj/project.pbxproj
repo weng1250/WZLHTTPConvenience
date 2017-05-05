@@ -13,6 +13,7 @@
 		19DB58E51EAE3C4A007D1076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DB58E31EAE3C4A007D1076 /* Main.storyboard */; };
 		19DB58E71EAE3C4A007D1076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DB58E61EAE3C4A007D1076 /* Assets.xcassets */; };
 		19DB58EA1EAE3C4A007D1076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DB58E81EAE3C4A007D1076 /* LaunchScreen.storyboard */; };
+		19DB58F41EAE4D95007D1076 /* WZLHTTPConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB58F31EAE4D95007D1076 /* WZLHTTPConvenience.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		19DB58E61EAE3C4A007D1076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DB58E91EAE3C4A007D1076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DB58EB1EAE3C4A007D1076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DB58F21EAE4D95007D1076 /* WZLHTTPConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLHTTPConvenience.h; sourceTree = "<group>"; };
+		19DB58F31EAE4D95007D1076 /* WZLHTTPConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLHTTPConvenience.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		19DB58D91EAE3C4A007D1076 /* WZLHTTPConvenience */ = {
 			isa = PBXGroup;
 			children = (
+				19DB58F11EAE3F2C007D1076 /* WZLHTTPConvenience */,
 				19DB58DD1EAE3C4A007D1076 /* AppDelegate.h */,
 				19DB58DE1EAE3C4A007D1076 /* AppDelegate.m */,
 				19DB58E01EAE3C4A007D1076 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				19DB58DB1EAE3C4A007D1076 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19DB58F11EAE3F2C007D1076 /* WZLHTTPConvenience */ = {
+			isa = PBXGroup;
+			children = (
+				19DB58F21EAE4D95007D1076 /* WZLHTTPConvenience.h */,
+				19DB58F31EAE4D95007D1076 /* WZLHTTPConvenience.m */,
+			);
+			path = WZLHTTPConvenience;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DB58E21EAE3C4A007D1076 /* ViewController.m in Sources */,
+				19DB58F41EAE4D95007D1076 /* WZLHTTPConvenience.m in Sources */,
 				19DB58DF1EAE3C4A007D1076 /* AppDelegate.m in Sources */,
 				19DB58DC1EAE3C4A007D1076 /* main.m in Sources */,
 			);
@@ -314,6 +328,7 @@
 				19DB58F01EAE3C4A007D1076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
