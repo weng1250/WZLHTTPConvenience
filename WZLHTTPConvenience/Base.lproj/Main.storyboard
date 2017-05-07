@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0r-GV-U5U">
+                                <rect key="frame" x="56" y="80" width="263" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="apT-aj-Qs9"/>
+                                    <constraint firstAttribute="height" constant="204" id="uUt-tE-832"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqL-VZ-5oN">
+                                <rect key="frame" x="127.5" y="302.5" width="120" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7CW-eo-nhf"/>
+                                    <constraint firstAttribute="width" constant="120" id="S3D-Y1-2MY"/>
+                                </constraints>
+                                <state key="normal" title="request png"/>
+                                <connections>
+                                    <action selector="actionRequestImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTg-ZI-iwY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T68-RT-6kp">
+                                <rect key="frame" x="94" y="372.5" width="187" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CsZ-6Y-RPy"/>
+                                    <constraint firstAttribute="width" constant="187" id="xzz-77-0m0"/>
+                                </constraints>
+                                <state key="normal" title="request with delay"/>
+                                <connections>
+                                    <action selector="actionRequestWithDelay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9e4-AE-rB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIQ-Xs-cNs">
+                                <rect key="frame" x="84" y="432.5" width="207" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aQa-Ty-DuB"/>
+                                    <constraint firstAttribute="width" constant="207" id="w5f-5T-fWa"/>
+                                </constraints>
+                                <state key="normal" title="request with error response"/>
+                                <connections>
+                                    <action selector="actionRequestWithErrorCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0H6-EB-ja0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bqL-VZ-5oN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3F9-4Z-lH9"/>
+                            <constraint firstItem="n0r-GV-U5U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="95L-0l-M6Q"/>
+                            <constraint firstItem="bqL-VZ-5oN" firstAttribute="top" secondItem="n0r-GV-U5U" secondAttribute="bottom" constant="18.5" id="E3x-Xu-2eU"/>
+                            <constraint firstItem="T68-RT-6kp" firstAttribute="top" secondItem="bqL-VZ-5oN" secondAttribute="bottom" constant="35" id="Nj5-gE-KXV"/>
+                            <constraint firstItem="n0r-GV-U5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bnS-IK-7wT"/>
+                            <constraint firstItem="cIQ-Xs-cNs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdk-tJ-dG3"/>
+                            <constraint firstItem="cIQ-Xs-cNs" firstAttribute="top" secondItem="T68-RT-6kp" secondAttribute="bottom" constant="25" id="xeO-JG-z99"/>
+                            <constraint firstItem="T68-RT-6kp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yUT-nJ-mlT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="n0r-GV-U5U" id="6LU-Mu-QoX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

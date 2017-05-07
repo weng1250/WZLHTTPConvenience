@@ -14,6 +14,7 @@
 		19DB58E71EAE3C4A007D1076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DB58E61EAE3C4A007D1076 /* Assets.xcassets */; };
 		19DB58EA1EAE3C4A007D1076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DB58E81EAE3C4A007D1076 /* LaunchScreen.storyboard */; };
 		19DB58F41EAE4D95007D1076 /* WZLHTTPConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB58F31EAE4D95007D1076 /* WZLHTTPConvenience.m */; };
+		21A9911185542A4663FDA670 /* libPods-WZLHTTPConvenience.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7745326E3C32C83DEBB1F0 /* libPods-WZLHTTPConvenience.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		19DB58EB1EAE3C4A007D1076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19DB58F21EAE4D95007D1076 /* WZLHTTPConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLHTTPConvenience.h; sourceTree = "<group>"; };
 		19DB58F31EAE4D95007D1076 /* WZLHTTPConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLHTTPConvenience.m; sourceTree = "<group>"; };
+		34B0B1B0B0DE2FB89471D789 /* Pods-WZLHTTPConvenience.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZLHTTPConvenience.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZLHTTPConvenience/Pods-WZLHTTPConvenience.release.xcconfig"; sourceTree = "<group>"; };
+		AF7745326E3C32C83DEBB1F0 /* libPods-WZLHTTPConvenience.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WZLHTTPConvenience.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EAAEAF59BDF0BC8A2FA313 /* Pods-WZLHTTPConvenience.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZLHTTPConvenience.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZLHTTPConvenience/Pods-WZLHTTPConvenience.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A9911185542A4663FDA670 /* libPods-WZLHTTPConvenience.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				19DB58D91EAE3C4A007D1076 /* WZLHTTPConvenience */,
 				19DB58D81EAE3C4A007D1076 /* Products */,
+				BD63547B8D7E5AC615438F2A /* Pods */,
+				EAFB3E798386228AF07620FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +99,23 @@
 			path = WZLHTTPConvenience;
 			sourceTree = "<group>";
 		};
+		BD63547B8D7E5AC615438F2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5EAAEAF59BDF0BC8A2FA313 /* Pods-WZLHTTPConvenience.debug.xcconfig */,
+				34B0B1B0B0DE2FB89471D789 /* Pods-WZLHTTPConvenience.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAFB3E798386228AF07620FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF7745326E3C32C83DEBB1F0 /* libPods-WZLHTTPConvenience.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19DB58EE1EAE3C4A007D1076 /* Build configuration list for PBXNativeTarget "WZLHTTPConvenience" */;
 			buildPhases = (
+				F149C804E46EB526B29892C8 /* [CP] Check Pods Manifest.lock */,
 				19DB58D31EAE3C4A007D1076 /* Sources */,
 				19DB58D41EAE3C4A007D1076 /* Frameworks */,
 				19DB58D51EAE3C4A007D1076 /* Resources */,
+				9A1B235F83E536196CAF8A78 /* [CP] Embed Pods Frameworks */,
+				85227DED1DC5B05194196B9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +185,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85227DED1DC5B05194196B9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLHTTPConvenience/Pods-WZLHTTPConvenience-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1B235F83E536196CAF8A78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZLHTTPConvenience/Pods-WZLHTTPConvenience-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F149C804E46EB526B29892C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19DB58D31EAE3C4A007D1076 /* Sources */ = {
@@ -287,6 +362,7 @@
 		};
 		19DB58EF1EAE3C4A007D1076 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5EAAEAF59BDF0BC8A2FA313 /* Pods-WZLHTTPConvenience.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2KD3NY78K;
@@ -299,6 +375,7 @@
 		};
 		19DB58F01EAE3C4A007D1076 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B0B1B0B0DE2FB89471D789 /* Pods-WZLHTTPConvenience.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2KD3NY78K;
